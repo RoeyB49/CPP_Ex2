@@ -1,40 +1,39 @@
+#ifndef CARD_HPP
+#define CARD_HPP
 # include "player.hpp"
 # include "stdio.h"
 # include <string>
 using std::string;
-
 // CPP_Ex2
 // Roey Biton
 // 313137150
+#include "player.hpp"
+#include <iostream>
 
-namespace ariel{
+namespace ariel {
 
-// Constructor
-Player::Player(string playername){
-    player_name = playername;
-    Cards_holding = 0;
-    Cards_Deck = 0;
-    
-}
-// Get the name of the player
-string Player::GetName(){
+    Player::Player(string playername): player_name(playername), Cards_Deck(52), Cards_holding(0) {}
 
-    return player_name;
-}
-// Get the number of cards the player is holding
-int Player::CardsHold(){
-    return Cards_holding;
-}
+    string Player::GetName() {
+        return 0;
+    }
 
-// Get the number of cards in the deck of the player
-int Player::Deck(){
-    return Cards_Deck;
-}
+    int Player::CardsHold() {
+        return 0;
+    }
 
-// Get if it is the turn of the player
-bool Player::turn(){
+    int Player::Deck() {
+        return 0;
+    }
 
-    return turn;
+    int Player::stacksize() {
+        return 0;
+    }
+
+    int Player::cardesTaken() {
+        return 0;
+    }
 }
 
-}
+#endif
+

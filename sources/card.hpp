@@ -1,3 +1,4 @@
+# include "stdio.h"
 // CPP_Ex2
 // Roey Biton
 // 313137150
@@ -14,27 +15,23 @@ int number;
 int CardType;
 
 public:
-
 // Building how card should look like. Card contains a number and a shape like I explained above
-Card(int num, int shape){
+   Card(int num, int shape);
+   int getCardType();
+   int getNumber();
 
-   number=num;
-   CardType=shape;
-
-}
 // Function the returns the number(value) of the card
-int getCardType(){
+// int getCardType(){
 
-return CardType;
+// return CardType;
 
-}
-// Function the returns the type(shape) of the card
-int getNumber(){
+// }
+// // Function the returns the type(shape) of the card
+// int getNumber(){
 
-return number;
+// return number;
 
-}
+// }
 
 };
-
 }

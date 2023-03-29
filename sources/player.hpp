@@ -1,4 +1,8 @@
-
+#ifndef PLAYER_HPP
+#define PLAYER_HPP
+# include "stdio.h"
+# include <string>
+using std::string;
 // CPP_Ex2
 // Roey Biton
 // 313137150
@@ -12,7 +16,7 @@ private:
     string player_name;
     int Cards_Deck;
     int Cards_holding;
-    bool turn;
+    // bool Player_turn;
 
 public:
 
@@ -20,8 +24,9 @@ public:
     string GetName();
     int CardsHold();
     int Deck();
-    bool turn();
     int stacksize();
     int cardesTaken();
+     // bool Player_turn();
     };
 }
+#endif // PLAYER_HPP
